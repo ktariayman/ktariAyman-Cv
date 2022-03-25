@@ -1,0 +1,161 @@
+ /* All */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+
+body{
+    background:lightblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+/* start container */
+
+.container{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    min-height:1000px;
+    background: #fff;
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+    
+}
+@media (max-width: 768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+}
+/* end container */
+
+/* start global left_side & right_side */
+.left_side,
+.right_side{
+    position:relative;
+    padding: 40px ;
+}
+.white{
+    background: #fff;
+}
+.blue{
+    background: #003147;
+}
+
+/* end global left_side & right_side */
+
+/* start left_side  */
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.profileText  h2{
+    color:#fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height:1.4em;
+}
+.profileText h2 span{
+    font-size: 0.6em;
+    font-weight: 200;
+
+}
+
+.contactInfo{
+    padding-top:40px;
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+}
+.title{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width:30px;
+    font-size: 18px;
+    color:#03a9f4;
+}
+.contactInfo ul li span{
+    color:#fff;
+    font-weight: 400;
+}
+.contactInfo ul li span a{
+    text-decoration: none;
+    color:#fff;
+
+}
+.competences .text{
+    margin-left: 25px;
+    color: #fff;
+    font-size:1em;
+}
+
+/* start right_side */
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+
+}
+.about__title{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+.switchy , .bookStore {
+    margin-top:20px;
+}
+.switchy a , .bookStore  a {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:#333;
+}
+/* end right_side */
